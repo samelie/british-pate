@@ -1,4 +1,4 @@
-import sono from '@stinkdigital/sono';
+import sono from 'sono';
 import TweenLite from 'gsap';
 import Proxxy from '../utils/proxy';
 const FADE_DUR = 3

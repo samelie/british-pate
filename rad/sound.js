@@ -1,4 +1,4 @@
-import sono from '@stinkdigital/sono';
+import sono from 'sono';
 import Analyzer from './audio-analysis'
 const FADE_DUR = 2
 const PEAK_CHECK = 4

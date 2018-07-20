@@ -50,7 +50,7 @@ class PhraseHelper {
         let _phrase = []
         _.each(subs, (sub, i) => {
             let _sidx = sidxs[i]
-            let _references = _sidx.sidx.references
+            let _references = _sidx.references
 
             let _subPhrase = {
                 seekValue: undefined,

@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import THREE from 'three';
 import ShaderLib from './shaders/shader_lib';
 import Shaders from './shaders/shaders';

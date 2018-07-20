@@ -1,4 +1,4 @@
-import sono from '@stinkdigital/sono';
+import sono from 'sono';
 import Emitter from './emitter'
 import Dilla from 'dilla';
 

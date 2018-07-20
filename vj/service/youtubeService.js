@@ -135,6 +135,7 @@ const YT = {
 		},
 
 		serverPlaylistItems(id) {
+			console.log(id);
 			let p = new Q((resolve, reject) => {
 				$.get(process.env.SERVER_BASE + 'youtube/playlistitems', {
 					id: id

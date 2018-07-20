@@ -16,7 +16,9 @@ class ControllerManager {
             let _masterId = controller.options.isSlave
             if(_masterId){
                 let _master = this._findById(_masterId)
-                _master.addSlave(controller)
+                if(_master){
+                    _master.addSlave(controller)
+                }
             }
         })
         Emitter.on('controller:srt:nextSub', (sub) => {

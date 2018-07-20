@@ -1,4 +1,4 @@
-import Sono from '@stinkdigital/sono'
+import Sono from 'sono'
 
 const THREHSOLD = 0.5
 const MIN_THREHSOLD = 0.3

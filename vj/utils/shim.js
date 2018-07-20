@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 const shim =  (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     define(['backbone.marionette', 'backbone.radio', 'underscore'], factory);

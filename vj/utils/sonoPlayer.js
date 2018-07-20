@@ -2,7 +2,7 @@ import _ from 'lodash';
 import Utils from 'utils';
 import Emitter from 'emitter';
 import Playlist from 'playlist';
-import sono from '@stinkdigital/sono';
+import sono from 'sono';
 // Define
 const Sono = (() => {
 

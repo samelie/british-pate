@@ -6,12 +6,23 @@ import Emitter from '../utils/emitter';
 
 import ServerService from '../service/serverService';
 import VjUtils from '../vj-utils';
+const ASSETS = 'https://storage.googleapis.com/samrad-british-pate/assets/';
 
 class ControllerBase {
     constructor(subtitles, options) {
         this._addVoSignal = new Signals()
         this._emitVoBound = this._onMediaSourceReady.bind(this)
         this._onEndingSignalBound = this._onEndingSignal.bind(this)
+    }
+
+    getJSONManifest(id) {
+        return fetch(`${ASSETS}manifests/${id}_manifests.json?z=${Math.random()}`)
+            .then(response => {
+                return response.json();
+            })
+            .then(manifests => {
+                return manifests.map(manifest => manifest[1]);
+            });
     }
 
     get addVoSignal() {

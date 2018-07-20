@@ -32,7 +32,7 @@ class MediaPlaylist {
 		this.mediaSource.endingSignal.add(() => {
 			this._getNext();
 			/*this.mediaSource.pause()
-			let index = this.options.index 
+			let index = this.options.index
 			Emitter.emit(`playother`, index)*/
 		});
 
