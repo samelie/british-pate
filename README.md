@@ -1,6 +1,4 @@
----
-typora-root-url: ../british-pate
----
+
 
 ## *"Standalone version of a once dynamic nation, I mean application. June 2016\brexit"* 
 
